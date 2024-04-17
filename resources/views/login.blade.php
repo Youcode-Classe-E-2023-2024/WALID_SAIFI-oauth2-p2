@@ -55,9 +55,9 @@
             })
             .then(data => {
                 // Gérer la connexion réussie
-                console.log(data);
+                console.log(data.data.token);
                 localStorage.setItem('token', data.data.token)
-                window.location.href = '/home';
+                //window.location.href = '/dashbord';
 
             })
             .catch(error => {
