@@ -37,3 +37,6 @@ Route::get('/Ajouter/group', function () {
     return view('ajouterRoles');
 });
 
+Route::get('/Ajouter/Per', function () {
+    return view('ajoutePer');
+});
