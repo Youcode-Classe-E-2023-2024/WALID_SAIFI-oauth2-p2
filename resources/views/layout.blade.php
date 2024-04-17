@@ -46,10 +46,10 @@
     <div class="navbar-nav">
         <div class="nav-item text-nowrap">
             <a class="nav-link px-3" href=""
-               onclick="event.preventDefault();
-                    document.getElementById('logout-form').submit();">
+               onclick="event.preventDefault(); logout()">
                 Sign out
             </a>
+
             <form id="logout-form" action="" method="POST" style="display: none;">
                 @csrf
             </form>
@@ -132,6 +132,43 @@
         </div>
 
 
+
+
+        <script>
+
+
+            function logout() {
+                fetch('http://127.0.0.1:8000/api/logout', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer ' + localStorage.getItem('token') // Include your authentication token if needed
+                    },
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('La réponse du réseau n\'est pas valide');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log(data);
+                        // Assuming you want to display a success message
+                        alert(data.message);
+                        // Redirect to the login page
+                        window.location.href = '/';
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        // Display error message if something went wrong
+                        alert('Une erreur s\'est produite lors de la déconnexion.');
+                    });
+            }
+
+
+
+
+        </script>
 
 
 
