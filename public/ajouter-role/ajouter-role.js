@@ -5,7 +5,7 @@ document.getElementById('addGroupForm').addEventListener('submit', function(even
     fetch('http://127.0.0.1:8000/api/groupes/ajouter', {
         method: 'POST',
         headers: {
-            'Authorization': 'Bearer ' + localStorage.getItem('token') 
+            'Authorization': 'Bearer ' + localStorage.getItem('token')
         },
         body: formData
     })
