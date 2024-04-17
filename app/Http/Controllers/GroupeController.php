@@ -62,6 +62,13 @@ class GroupeController extends Controller
         return response()->json(['message' => 'Utilisateur assigné au groupe avec succès'], 200);
     }
 
+    public function indexAssignUserToGroup(){
+        $groups = Group::all();
+        $users = User::all();
+        return view('assignUserToGroup', compact('groups', 'users'));
+    }
+
+
 
 
 
