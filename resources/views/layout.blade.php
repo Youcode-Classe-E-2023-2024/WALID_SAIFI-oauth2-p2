@@ -61,7 +61,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light position-fixed sidebar collapse">
             <div class="position-sticky pt-3">
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -73,26 +73,26 @@
                     <li class="nav-item">
                         <a class="nav-link" href="">
                             <span data-feather="file"></span>
-                            Gestion des catégorisers
+                            Gestion des Roles
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span data-feather="users"></span>
-                            Gestion des utilisateur
+                            Gestion des Permissions
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span data-feather="bar-chart-2"></span>
-                            Reports
+                            Ajouter Role
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span data-feather="layers"></span>
-                            Integrations
+                            Ajouter Permission
                         </a>
                     </li>
                 </ul>
@@ -107,27 +107,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span data-feather="file-text"></span>
-                            Current month
+                           user --->Groupe
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span data-feather="file-text"></span>
-                            Last quarter
+                            Groups--->Permissions
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="file-text"></span>
-                            Social engagement
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="file-text"></span>
-                            Year-end sale
-                        </a>
-                    </li>
+
                 </ul>
             </div>
         </nav>
@@ -136,7 +125,11 @@
 
 
         <div>
+
+
             @yield('content')
+
+
         </div>
 
 
