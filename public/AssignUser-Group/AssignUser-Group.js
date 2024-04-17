@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
         var groupId = document.getElementById('group').value;
 
         fetch('http://127.0.0.1:8000/api/groupes/' + groupId + '/utilisateurs/' + userId + '/assigner',{
-            method: 'POST',
+            method: 'PUT',
             headers: {
-                'Authorization': 'Bearer ' + localStorage.getItem('token'), 
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
             },
         })
             .then(response => {
