@@ -33,3 +33,7 @@ Route::get('/dashbord', function () {
     return view('dashbord');
 });
 
+Route::get('/Ajouter/group', function () {
+    return view('ajouterRoles');
+});
+
