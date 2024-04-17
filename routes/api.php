@@ -30,10 +30,10 @@ Route::controller(LoginRegisterController::class)->group(function() {
     Route::post('/login', 'login');
 });
 
-
+Route::post('/groupes/ajouter', [GroupeController::class, 'ajouter']);
 Route::group(['middleware' => ['auth:api', 'checkGroupName']], function () {
 
-    Route::post('/groupes/ajouter', [GroupeController::class, 'ajouter']);
+
     Route::get('/goupes/index',[GroupeController::class, 'index']);
 
     Route::put('/groupes/{id}/update', [GroupeController::class, 'update']);
