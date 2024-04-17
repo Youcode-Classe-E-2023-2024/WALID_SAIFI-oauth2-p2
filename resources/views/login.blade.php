@@ -57,7 +57,7 @@
                 // Gérer la connexion réussie
                 console.log(data.data.token);
                 localStorage.setItem('token', data.data.token)
-                //window.location.href = '/dashbord';
+                window.location.href = '/dashbord';
 
             })
             .catch(error => {
