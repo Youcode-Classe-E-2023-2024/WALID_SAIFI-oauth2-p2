@@ -38,8 +38,8 @@
         </div>
     </div>
 
+
+    <script src="{{asset('/AssignPer-Group/AssignPer-Group.js')}}"></script>
 @endsection
 
-@push('scripts')
-    <script src="{{asset('/AssignPer-Group/AssignPer-Group.js')}}"></script>
-@endpush
+
