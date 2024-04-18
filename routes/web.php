@@ -51,6 +51,6 @@ Route::get('/Ajouter/Per', function () {
 })->name('ajoutePer');
 Route::get('/Assign/User', [GroupeController::class, 'indexAssignUserToGroup'])->name('Assign.User');
 
-Route::get('/Assign/Per', [PermissionController::class, 'indexassignPerToGroup'])->name('assignPerToGroup');
+Route::get('/Assigne/permission', [PermissionController::class, 'indexassignPerToGroup'])->name('assignPerToGroup');
 
 
