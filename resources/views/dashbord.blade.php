@@ -11,46 +11,13 @@
         </div>
         <div class="container mt-4">
             <div class="row">
-                <div class="col-md-3 mb-3">
-                    <div class="card text-dark bg-warning">
-                        <div class="card-body">
-                            <i class="fas fa-tags fa-2x"></i>
-                            <h5 class="card-title">Nombre de Tags</h5>
-                            <p class="card-text"></p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-3 mb-3">
-                    <div class="card text-dark bg-warning">
-                        <div class="card-body">
-                            <i class="fas fa-folder fa-2x"></i>
-                            <h5 class="card-title">Nombre de Catégories</h5>
-                            <p class="card-text"></p>
 
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-3 mb-3">
-                    <div class="card text-dark bg-warning">
-                        <div class="card-body">
-                            <i class="fas fa-book fa-2x"></i>
-                            <h5 class="card-title">Nombre de Wikis</h5>
-                            <p class="card-text"></p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-3 mb-3">
-                    <div class="card text-dark bg-warning">
-                        <div class="card-body">
-                            <i class="fas fa-users fa-2x"></i>
-                            <h5 class="card-title">Nombre d'Utilisateurs</h5>
-                            <p class="card-text"></p>
-                        </div>
-                    </div>
-                </div>
+
+
+
             </div>
         </div>
     </main>
