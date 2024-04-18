@@ -33,10 +33,13 @@ Route::get('/sinup', function () {
 
 Route::get('/dashbord', function () {
     return view('dashbord');
-});
+})->name('dashbord');
 
 Route::get('/gestionGroup', function () {
     return view('gestion_groupe');
+});
+Route::get('/gestionPermition', function () {
+    return view('gestion_permission');
 });
 
 Route::get('/Ajouter/group', function () {
