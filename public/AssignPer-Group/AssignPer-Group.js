@@ -1,3 +1,5 @@
+console.log('test ');
+
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('addPerForm').addEventListener('submit', function (event) {
         event.preventDefault();
@@ -5,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
         var permissionId = document.getElementById('permission').value;
         var groupId = document.getElementById('group').value;
 
-        fetch('http://127.0.0.1:8000/api/groups/' + groupId + '/permissions/' + permissionId, {
-            method: 'POST', // Changement de la méthode en POST
+        fetch('/api/groups/' + groupId + '/permissions/' + permissionId, {
+            method: 'PUT',
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('token') // Include your authentication token if needed
             },
@@ -24,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             })
             .catch(error => {
+
                 console.error('Error:', error);
 
                 document.getElementById('message').innerHTML = '<div class="alert alert-danger" role="alert">Une erreur s\'est produite lors de l\'assignation de la permission au groupe.</div>';
