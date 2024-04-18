@@ -4,6 +4,7 @@ use App\Http\Controllers\Auth\LoginRegisterController;
 use App\Http\Controllers\AuthentificationController;
 use App\Http\Controllers\ForgetpasswordController;
 use App\Http\Controllers\GroupeController;
+use App\Http\Controllers\PermissionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+//assignPerToGroup
 Route::get('/home', function () {
     return view('test');
 });
@@ -42,3 +43,5 @@ Route::get('/Ajouter/Per', function () {
     return view('ajoutePer');
 });
 Route::get('/Assign/User', [GroupeController::class, 'indexAssignUserToGroup'])->name('Assign.User');
+
+Route::get('/Assign/Per', [PermissionController::class, 'indexassignPerToGroup'])->name('assignPerToGroup');
