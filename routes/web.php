@@ -35,13 +35,19 @@ Route::get('/dashbord', function () {
     return view('dashbord');
 });
 
+Route::get('/gestionGroup', function () {
+    return view('gestion_groupe');
+});
+
 Route::get('/Ajouter/group', function () {
     return view('ajouterRoles');
-});
+})->name('ajouterRoles');
 
 Route::get('/Ajouter/Per', function () {
     return view('ajoutePer');
-});
+})->name('ajoutePer');
 Route::get('/Assign/User', [GroupeController::class, 'indexAssignUserToGroup'])->name('Assign.User');
 
 Route::get('/Assign/Per', [PermissionController::class, 'indexassignPerToGroup'])->name('assignPerToGroup');
+
+
