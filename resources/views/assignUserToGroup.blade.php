@@ -10,7 +10,7 @@
                         <h2 class="mb-0">Assigner l'utilisateur à un groupe</h2>
                     </div>
                     <div class="card-body">
-                        <form action="" method="POST" id="addForm">
+                        <form action="#" method="POST" id="addForm">
                             @csrf
                             <div class="form-group mb-3">
                                 <label for="user">Liste des utilisateurs :</label>
